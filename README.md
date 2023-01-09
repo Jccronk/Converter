@@ -1,1 +1,1 @@
-# A Converter app. Switches between units of length, mass, and temperature.
+# A Converter program. Converts between units of length, mass, and temperature.
