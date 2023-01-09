@@ -19,6 +19,7 @@ public class Driver {
             String[] parts = line.split(",");
             unit = Integer.parseInt(parts[0]);
             type = parts[1];
+            scanner.close();
         } catch (NumberFormatException e) {
             System.out.println("Invalid input! Please enter an integer followed by a string.");
         }
