@@ -15,10 +15,10 @@ public class Driver {
         String type = "";
 
         try {
-            String line = scanner.nextLine();
+            String line = scanner.nextLine().trim();
             String[] parts = line.split(",");
-            unit = Integer.parseInt(parts[0]);
-            type = parts[1];
+            unit = Integer.parseInt(parts[0].trim());
+            type = parts[1].trim();
             scanner.close();
         } catch (NumberFormatException e) {
             System.out.println("Invalid input! Please enter an integer followed by a string.");
@@ -33,7 +33,7 @@ public class Driver {
                 System.out.println(unit + " feet = " + unit * 12 + " inches");
                 break;
             case "inches":
-            System.out.println(unit + " inches = " + unit / 12 + " feet");
+                System.out.println(unit + " inches = " + (double) unit / 12 + " feet");
                 break;
             case "kilograms":
                 // Code to handle "kilograms" goes here
@@ -48,7 +48,7 @@ public class Driver {
                 // Code to handle "fahrenheit" goes here
                 break;
             default:
-                // Code to handle all other values goes here
+                System.out.println("Something went wrong");
                 break;
         }
 
