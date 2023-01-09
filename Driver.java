@@ -40,16 +40,16 @@ public class Driver {
                 System.out.println(unit + " inches = " + (double) unit / 12 + " feet");
                 break;
             case "kilograms":
-                // Code to handle "kilograms" goes here
+                System.out.println(unit + " kilograms = " + unit * 2.20462 + " pounds");
                 break;
             case "pounds":
-                // Code to handle "pounds" goes here
+                System.out.println(unit + " pounds = " + unit / 2.20462 + " kilograms");
                 break;
             case "celsius":
-                // Code to handle "celsius" goes here
+                System.out.println(unit + " Celsius = " + (unit * 9 / 5) + 32 + " Fahrenheit");
                 break;
             case "fahrenheit":
-                // Code to handle "fahrenheit" goes here
+                System.out.println(unit + " degrees Fahrenheit = " + (unit - 32) * (5.0 / 9.0) + " degrees Celsius");
                 break;
             default:
                 System.out.println("Something went wrong");
