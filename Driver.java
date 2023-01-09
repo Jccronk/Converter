@@ -11,13 +11,13 @@ public class Driver {
         System.out.println("Enter an integer and a string separated by a comma: ");
         System.out.println("Units available are feet, inches, kilograms, pounds, celcius, fahrenheit ");
 
-        int unit = Integer.MIN_VALUE;
+        double unit = Integer.MIN_VALUE;
         String type = "";
 
         try {
             String line = scanner.nextLine().trim();
             String[] parts = line.split(",");
-            unit = Integer.parseInt(parts[0].trim());
+            unit = Double.parseDouble(parts[0].trim());
             type = parts[1].trim();
             scanner.close();
             convertAndPrint(unit, type);
@@ -27,7 +27,7 @@ public class Driver {
 
     }
 
-    private static void convertAndPrint(int unit, String type) {
+    private static void convertAndPrint(Double unit, String type) {
         switch (type) {
             case "feet":
                 System.out.println(unit + " feet = " + unit * 12 + " inches");
