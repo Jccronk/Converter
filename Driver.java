@@ -33,7 +33,7 @@ public class Driver {
                 System.out.println(unit + " feet = " + unit * 12 + " inches");
                 break;
             case "inches":
-                // Code to handle "inches" goes here
+            System.out.println(unit + " inches = " + unit / 12 + " feet");
                 break;
             case "kilograms":
                 // Code to handle "kilograms" goes here
