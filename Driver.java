@@ -30,7 +30,7 @@ public class Driver {
 
         switch (type) {
             case "feet":
-                System.out.println(unit + "feet = " + unit * 12 + " inches");
+                System.out.println(unit + " feet = " + unit * 12 + " inches");
                 break;
             case "inches":
                 // Code to handle "inches" goes here
