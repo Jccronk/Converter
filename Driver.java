@@ -28,6 +28,10 @@ public class Driver {
             throw new IllegalArgumentException("Invalid value for 'unit': " + unit);
         }
 
+        convertAndPrint(unit, type);
+    }
+
+    private static void convertAndPrint(int unit, String type) {
         switch (type) {
             case "feet":
                 System.out.println(unit + " feet = " + unit * 12 + " inches");
@@ -51,6 +55,5 @@ public class Driver {
                 System.out.println("Something went wrong");
                 break;
         }
-
     }
 }
